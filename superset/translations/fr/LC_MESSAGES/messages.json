@@ -36,6 +36,10 @@
       "%(object)s does not exist in this database.": [
         "%(object)s n'existe pas dans cette base de données."
       ],
+      "%(other)s charts will appear here": ["%(other)s graphiques apparaîtront ici"],
+      "%(other)s dashboards will appear here": ["%(other)s tableaux de bord apparaîtront ici"],
+      "%(other)s recents will appear here": ["%(other)s éléments récents apparaîtront ici"],
+      "%(other)s saved queries will appear here": ["%(other)s requêtes enregistrées apparaîtront ici"],
       "%(prefix)s %(title)s": ["%(prefix)s %(title)s"],
       "%(rows)d rows returned": ["%(rows)d lignes retournées"],
       "%(user)s was granted the role %(role)s that gives access to the %(datasource)s": [
@@ -166,6 +170,7 @@
         "Une référence à la configuration [Time] prends la granularité en compte"
       ],
       "A reusable dataset will be saved with your chart.": [""],
+      "A screenshot of the dashboard will be sent to your email at": ["Une capture d'écran du tableau de bord sera envoyée à votre adresse e-mail à"],
       "A set of parameters that become available in the query using Jinja templating syntax": [
         "Un ensemble de paramètre qui seront disponible dans la requête utilisant la syntaxe du template Jinja"
       ],
@@ -210,9 +215,11 @@
       "Add Column": ["Ajouter une colonne"],
       "Add Dashboard": ["Ajouter un tableau de bord"],
       "Add Database": ["Ajouter une base de données"],
+      "Add extra connection information.": ["Ajoutez des informations de connexion supplémentaires."],
       "Add Log": ["Ajouter un log"],
       "Add Metric": ["Ajouter une métrique"],
       "Add Saved Query": ["Ajouter une requête sauvegardée"],
+      "Add a dataset": ["Ajouter un jeu de données"],
       "Add a Plugin": ["Ajouter un plugin"],
       "Add a new tab to create SQL Query": [""],
       "Add additional custom parameters": [
@@ -248,6 +255,7 @@
       "Additional fields may be required": [""],
       "Additional information": ["Informations additionnelles"],
       "Additional parameters": ["Paramètres supplémentaires"],
+      "Additional settings.": ["Paramètres additionnels."],
       "Additional text to add before or after the value, e.g. unit": [""],
       "Adjust how this database will interact with SQL Lab.": ["Ajustez la façon dont cette base de données interagira avec SQL Lab."],
       "Adjust performance settings of this database.": ["Ajustez les paramètres de performances de cette base de données."],
@@ -1172,6 +1180,7 @@
         "La base de données \"%(database_name)s\" schéma \"%(schema_name)s\" n'est pas autorisée pour les téléversements Excel. Contactez votre administrateur Superset."
       ],
       "Database URL": ["URL de la base de données"],
+      "Database Connections": ["Connexions aux bases de données"],
       "Database could not be created.": [
         "La base de données n'a pas pu être créée."
       ],
@@ -1401,6 +1410,7 @@
         ""
       ],
       "Disable embedding?": [""],
+      "Discard": ["Annuler"],
       "Display Name": ["Nom affiché"],
       "Display column level total": [""],
       "Display configuration": ["Configuration d'affichage"],
@@ -1530,6 +1540,7 @@
       "Employment and education": [""],
       "Empty circle": [""],
       "Empty collection": ["Collection vide"],
+      "Empty column": ["Colonne vide"],
       "Empty query?": ["Requête vide ?"],
       "Empty row": ["Ligne vide"],
       "Enable Filter Select": ["Activer le filtre de sélection"],
@@ -1741,6 +1752,7 @@
       "Fixed": ["Modifié"],
       "Fixed color": ["Couleur fixe"],
       "Fixed point radius": [""],
+      "Flow": ["Flux"],
       "Font size": [""],
       "Font size for axis labels, detail value and other text elements": [""],
       "Font size for the biggest value in the list": [""],
@@ -2067,6 +2079,7 @@
       "Mandatory": ["Obligatoire"],
       "Mangle Duplicate Columns": ["Supprimer les colonnes en double"],
       "Manually set min/max values for the y-axis.": [""],
+      "Map": ["Carte"],
       "Mapbox": ["Mapbox"],
       "March": ["Mars"],
       "Mark a column as temporal in \"Edit datasource\" modal": [""],
@@ -2205,6 +2218,7 @@
       "New chart": ["Nouveau graphique"],
       "New columns added: %s": ["Nouvelles colonnes ajoutées : %s"],
       "New filter set": ["Nouvel ensemble de filtre"],
+      "New header": ["Nouvel en-tête"],
       "New tab": ["Nouvel onglet"],
       "New tab (Ctrl + q)": ["Nouvel onglet (Ctrl + q)"],
       "New tab (Ctrl + t)": ["Nouvel onglet (Ctrl + t)"],
@@ -2219,6 +2233,7 @@
       "No columns": ["Pas de colonne"],
       "No compatible columns found": ["Aucun colonne compatible trouvée"],
       "No dashboards": ["Aucun tableau de bord"],
+      "No dashboards yet": ["Pas encore de tableau de bord"],
       "No data": ["Pas de données"],
       "No data after filtering or data is NULL for the latest time record": [
         "Pas de données après filtrage ou données manquantes pour la période sélectionnée"
@@ -2244,6 +2259,7 @@
       "No results were returned for this query. If you expected results to be returned, ensure any filters are configured properly and the datasource contains data for the selected time range.": [
         ""
       ],
+      "No saved queries yet": ["Aucune requête enregistrée pour l'instant"],
       "No stored results found, you need to re-run your query": [
         "Pas de résultat existant trouvé, re-jouez votre requête"
       ],
@@ -2378,6 +2394,7 @@
       "Optional warning about use of this metric": [
         "Avertissement optionnel à propos de l'utilisation de cette métrique"
       ],
+      "or": ["ou"],
       "Or choose from a list of other databases we support:": [""],
       "Order by entity id": [""],
       "Order results by selected columns": [""],
@@ -2612,6 +2629,7 @@
       "Range filter plugin using AntD": [""],
       "Range labels": [""],
       "Ranges to highlight with shading": [""],
+      "Ranking": ["Classement"],
       "Raw records": [""],
       "Ready to review filters in this dashboard?": [
         "Prêt à vérifier les filtres dans ce tableau de bord ?"
@@ -3951,14 +3969,18 @@
       "Untitled query": ["Requête sans titre"],
       "Update": ["Mettre à jour"],
       "Upload": ["Téléverser"],
+      "Upload CSV": ["Télécharger CSV"],
       "Upload CSV to database": [
         "Importer des fichiers CSV vers la base de données"
       ],
       "Upload Credentials": ["Charger les informations de connexion"],
+      "Upload Excel file": ["Télécharger fichier Excel"],
       "Upload Excel file to database": [
         "Importer des fichiers Excel vers la base de données"
       ],
+      "Upload file to database": ["Télécharger le fichier dans la base de données"],
       "Upload JSON file": ["Charger un fichier JSON"],
+      "Upload columnar file": ["Télécharger un fichier en colonnes"],
       "Upload columnar file to database": [
         "Importer des colonnes vers la base de données"
       ],
@@ -4031,6 +4053,7 @@
       "Video game consoles": [""],
       "View All »": ["Tout voir »"],
       "View in SQL Lab": ["Voir dans SQL Lab"],
+      "view instructions": ["voir les instructions"],
       "View keys & indexes (%s)": ["Vue des clefs et index (%s)"],
       "View query": ["Voir la requête"],
       "Viewed": ["Consultés"],
@@ -4132,7 +4155,8 @@
       "Week starting Monday": ["Semaine débutant le lundi"],
       "Week starting Sunday": ["Semaine débutant le dimanche"],
       "Week_ending Sunday": ["Semaine terminant le dimanche"],
-      "Weekly Report for %s": [""],
+      "Weekly Report": ["Rapport hebdomadaire"],
+      "Weekly Report for %s": ["Rapport hebdomadaire pour %s"],
       "Weekly seasonality": [""],
       "What should be shown on the label?": [""],
       "When `Calculation type` is set to \"Percentage change\", the Y Axis Format is forced to `.1%`": [
@@ -4404,6 +4428,7 @@
         "[Superset] Accès à la source de données %(name)s accordé"
       ],
       "[Untitled]": ["[Sans titre]"],
+      "[ untitled dashboard ]": ["[ tableau de bord sans titre ]"],
       "[dashboard name]": ["[nom du tableau de bord]"],
       "[desc]": [""],
       "[optional] this secondary metric is used to define the color as a ratio against the primary metric. When omitted, the color is categorical and based on labels": [
@@ -4484,6 +4509,7 @@
         "dialect+driver://username:password@host:port/database"
       ],
       "draft": ["brouillon"],
+      "Drag and drop components to this tab": ["Faites glisser et déposez les composants vers cet onglet"],
       "dttm": ["dttm"],
       "e.g. ********": [""],
       "e.g. 127.0.0.1": [""],
